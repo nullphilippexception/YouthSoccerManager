@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/title_bar_player_display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+        </LinearLayout>
+
+        <!-- Picture, Name, Jersey Nr, Position, Country -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"
+                    android:background="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:id="@+id/player_display_namenr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Firstname Lastname (#NR)"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/player_display_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PositionWrittenInFull"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/player_display_ovr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OVR: XX"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/player_display_nationality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HomeCountry"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:text=" "/>
+
+        <!-- Exp (Stars: &#9733;, &#9734;), OVR, Age, Salary, Rem. Contract length -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/player_display_exp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exp: &#9733; &#9733; &#9734;"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/player_display_agesalarycontract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age: 16, Salary: €0, Rem. Contract: 0"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:text=" "/>
+
+        <!-- Attributes (seperate into two Linear Layouts next to each other) -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TableRow
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Speed:"
+                                android:textSize="20dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/player_display_speed"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="XX"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Intelligence:"
+                                android:textSize="20dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/player_display_intelligence"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="XX"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Defending:"
+                                android:textSize="20dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/player_display_defending"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="XX"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Passing:"
+                                android:textSize="20dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/player_display_passing"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="XX"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"/>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Strength:"
+                                android:textSize="20dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/player_display_strength"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="XX"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Goalkeeping:"
+                                android:textSize="20dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/player_display_goalkeeping"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="XX"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Dribbling:"
+                                android:textSize="20dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/player_display_dribbling"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="XX"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Shooting:"
+                                android:textSize="20dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/player_display_shooting"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="XX"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"/>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:text=" "/>
+
+        <!-- Fitness, Morale, Attitude -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/player_display_fitness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fitness: XX%"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/player_display_morale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Morale: XX%"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/player_display_attitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attitude: attitudeDescriptionString"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:text=" "/>
+
+        <!-- Stats -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TableRow
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Goals:"
+                                android:textSize="20dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/player_display_goals"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="XX"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Games (F):"
+                                android:textSize="20dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/player_display_gamesF"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="XX"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Games (C):"
+                                android:textSize="20dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/player_display_gamesC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="XX"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"/>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Assists:"
+                                android:textSize="20dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/player_display_assists"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="XX"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Minutes (F):"
+                                android:textSize="20dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/player_display_minutesF"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="XX"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Minutes (C):"
+                                android:textSize="20dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/player_display_minutesC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="XX"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"/>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:text=" "/>
+
+        <!-- Actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="100dp"
+                android:textSize="25dp"
+                android:text="Contract"
+                android:backgroundTint="#a4a6ab"
+                android:textColor="@color/black"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="100dp"
+                android:textSize="25dp"
+                android:text="Move/Fire"
+                android:backgroundTint="#a4a6ab"
+                android:textColor="@color/black"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="100dp"
+                android:textSize="25dp"
+                android:text="Playing Time"
+                android:backgroundTint="#a4a6ab"
+                android:textColor="@color/black"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="100dp"
+                android:textSize="25dp"
+                android:text="Assign position"
+                android:backgroundTint="#a4a6ab"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

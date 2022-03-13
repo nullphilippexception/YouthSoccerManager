@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/title_bar_main_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/main_menu_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+
+            <TableRow
+                android:gravity="center">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/main_menu_today_events"
+                    android:text="Today's Events"
+                    android:layout_span="2"
+                    android:textAllCaps="false"
+                    android:layout_height="120dp"
+                    android:textSize="25dp"
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
+                    android:onClick="goToTodaysEvents"
+                    app:icon="@mipmap/calendar"
+                    app:iconSize="80dp"
+                    app:iconTint="@null"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center">
+                <Button
+                    android:id="@+id/main_menu_calendar"
+                    android:text="Calendar"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="80dp"
+                    android:textSize="25dp"
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
+                    android:onClick="goToCalendar"/>
+                <Button
+                    android:id="@+id/main_menu_mails"
+                    android:text="Mails"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="80dp"
+                    android:textSize="25dp"
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
+                    android:onClick="goToMails"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center">
+                <Button
+                    android:id="@+id/main_menu_teams"
+                    android:text="Teams"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="80dp"
+                    android:textSize="25dp"
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
+                    android:onClick="goToTeams"/>
+                <Button
+                    android:id="@+id/main_menu_personnel_finance"
+                    android:text="Personnel &amp; \nFinance"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="80dp"
+                    android:textSize="20dp"
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
+                    android:onClick="goToPersonnelAndFinance"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center">
+                <Button
+                    android:id="@+id/main_menu_scouting_talent_development"
+                    android:text="Scouting &amp; \nTalent Development"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="80dp"
+                    android:textSize="14dp"
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
+                    android:onClick="goToScoutingAndTalentDevelopment"/>
+                <Button
+                    android:id="@+id/main_menu_stats"
+                    android:text="Stats"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="80dp"
+                    android:textSize="25dp"
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
+                    android:onClick="goToStats"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center">
+                <Button
+                    android:id="@+id/main_menu_settings"
+                    android:text="Settings"
+                    android:layout_span="2"
+                    android:textAllCaps="false"
+                    android:layout_height="80dp"
+                    android:textSize="25dp"
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
+                    android:onClick="goToSettingsAndTutorials"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

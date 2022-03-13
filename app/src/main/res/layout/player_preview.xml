@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/ll_myteam_player_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_height="60dp"
+                    android:layout_width="60dp"
+                    android:background="@color/black"
+                    android:layout_marginRight="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:id="@+id/myteam_player_preview_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:text="Namey Namefield"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/myteam_player_preview_detaildata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:text="POS | OVR: XX | XX y.o."/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/template_btn_name_rename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp"
+                    android:text="..."
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"/>
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

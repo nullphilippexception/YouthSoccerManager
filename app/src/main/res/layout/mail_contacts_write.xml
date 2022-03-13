@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/title_bar_mail_contacts_write"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mail_contacts_write_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="right">
+            <ImageButton
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@mipmap/write_mail_ask_for_players_foreground"
+                android:contentDescription="Press to ask for players"
+                android:onClick="askForPlayers"/>
+            <ImageButton
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@mipmap/write_mail_ask_for_friendly_foreground"
+                android:contentDescription="Press to ask for friendly"
+                android:onClick="askForFriendly"/>
+            <ImageButton
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@mipmap/write_mail_offer_job_foreground"
+                android:contentDescription="Press to offer job"
+                android:onClick="offerPersonnelJob"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

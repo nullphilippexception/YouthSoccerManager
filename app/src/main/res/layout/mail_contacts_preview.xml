@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TableRow>
+                <ImageView
+                    android:layout_height="60dp"
+                    android:layout_width="60dp"
+                    android:background="@color/black"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:id="@+id/mail_contacts_preview_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:text="Namey Namefield"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/mail_contacts_preview_jobtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:text="JobTitle"/>
+                    <TextView
+                        android:id="@+id/mail_contacts_preview_team"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:text="ClubName UXX"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/template_btn_name_rename_mail_contacts_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:textSize="20dp"
+                    android:text="..."
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

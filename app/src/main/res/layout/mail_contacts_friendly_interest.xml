@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/title_bar_mail_contacts_friendly_interest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mail_contacts_friendly_interest_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_margin="10dp">
+            <ImageView
+                android:id="@+id/mail_contacts_friendly_interest_schedule_answerimg"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:contentDescription="Decision whether there is interest" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/mail_contacts_friendly_interest_schedule_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Schedule date:"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"/>
+
+                    <EditText
+                        android:id="@+id/mail_contacts_friendly_interest_schedule_entry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="dd.mm."
+                        android:textSize="25dp" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/mail_contacts_friendly_interest_schedule_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="25dp"
+                android:text="Schedule"
+                android:backgroundTint="#a4a6ab"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

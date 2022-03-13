@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/title_bar_teams"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/teams_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- U19 Team -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_span="3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#212120">
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="U19 Team"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"/>
+                    <TextView
+                        android:id="@+id/teams_u19_preview"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Players: XX, &#8709; Rating: XX"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/teams_u19_btn"
+                    android:onClick="goToSquad"
+                    android:layout_span="1"
+                    android:layout_height="80dp"
+                    android:layout_width="120dp"
+                    android:text="Squad"
+                    android:textSize="20dp"
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"/>
+            </TableRow>
+
+            <!-- U17 Team -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_span="3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#212120">
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="U17 Team"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"/>
+                    <TextView
+                        android:id="@+id/teams_u17_preview"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Players: XX, &#8709; Rating: XX"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/teams_u17_btn"
+                    android:onClick="goToSquad"
+                    android:layout_span="1"
+                    android:layout_height="80dp"
+                    android:layout_width="120dp"
+                    android:text="Squad"
+                    android:textSize="20dp"
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"/>
+            </TableRow>
+
+            <!-- U15 Team -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_span="3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#212120">
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="U15 Team"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"/>
+                    <TextView
+                        android:id="@+id/teams_u15_preview"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Players: XX, &#8709; Rating: XX"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/teams_u15_btn"
+                    android:onClick="goToSquad"
+                    android:layout_span="1"
+                    android:layout_height="80dp"
+                    android:layout_width="120dp"
+                    android:text="Squad"
+                    android:textSize="20dp"
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"/>
+            </TableRow>
+
+            <!-- U13 Team -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_span="3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#212120">
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="U13 Team"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"/>
+                    <TextView
+                        android:id="@+id/teams_u13_preview"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Players: XX, &#8709; Rating: XX"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/teams_u13_btn"
+                    android:onClick="goToSquad"
+                    android:layout_span="1"
+                    android:layout_height="80dp"
+                    android:layout_width="120dp"
+                    android:text="Squad"
+                    android:textSize="20dp"
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
