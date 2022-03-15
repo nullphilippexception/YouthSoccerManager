@@ -1,5 +1,9 @@
 package com.example.youthsoccermanager.dataclasses.attributeenums;
 
+/**
+ * Enum that contains all the possible positions a player can have
+ * @author Philipp S.
+ */
 public enum EPosition {
     GK ("Goalkeeper"),
     RB ("Right Back"),
@@ -19,6 +23,11 @@ public enum EPosition {
         this.spelledOutPosition = spelledOutPosition;
     }
 
+    /**
+     * getter method that returns the position as a verbose string that contains the whole position name
+     * instead of only the abbreviation that is used in the enum
+     * @return full name of position
+     */
     public String getSpelledOutPosition() {
         return this.spelledOutPosition;
     }
