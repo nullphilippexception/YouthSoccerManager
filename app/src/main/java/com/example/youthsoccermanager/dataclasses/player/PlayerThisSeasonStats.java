@@ -1,4 +1,4 @@
-package com.example.youthsoccermanager.dataclasses;
+package com.example.youthsoccermanager.dataclasses.player;
 
 import com.example.youthsoccermanager.R;
 

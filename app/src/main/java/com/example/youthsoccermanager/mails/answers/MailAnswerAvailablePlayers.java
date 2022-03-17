@@ -9,8 +9,8 @@ import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.youthsoccermanager.R;
-import com.example.youthsoccermanager.dataclasses.Player;
-import com.example.youthsoccermanager.dataclasses.PlayerFactory;
+import com.example.youthsoccermanager.dataclasses.player.Player;
+import com.example.youthsoccermanager.dataclasses.player.PlayerFactory;
 import com.example.youthsoccermanager.dataclasses.attributeenums.EPreviewValues;
 import com.example.youthsoccermanager.layouthelper.PersonPreviewCreator;
 import com.example.youthsoccermanager.layouthelper.TitleBarSetter;

@@ -8,13 +8,11 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.youthsoccermanager.R;
-import com.example.youthsoccermanager.dataclasses.Player;
-import com.example.youthsoccermanager.dataclasses.PlayerFactory;
+import com.example.youthsoccermanager.dataclasses.player.Player;
+import com.example.youthsoccermanager.dataclasses.player.PlayerFactory;
 import com.example.youthsoccermanager.layouthelper.TitleBarSetter;
 import com.example.youthsoccermanager.userhelplibrary.IHelpProvider;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;

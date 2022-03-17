@@ -1,6 +1,5 @@
-package com.example.youthsoccermanager.dataclasses;
+package com.example.youthsoccermanager.dataclasses.player;
 
-import com.example.youthsoccermanager.R;
 import com.example.youthsoccermanager.dataclasses.attributeenums.EPreviewValues;
 
 import java.util.HashMap;
