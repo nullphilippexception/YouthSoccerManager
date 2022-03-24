@@ -19,9 +19,21 @@
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/personnel_contract_negotiation.xml" value="0.22" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/personnel_display.xml" value="0.22" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/personnel_finance.xml" value="0.25" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/personnel_finance_assign_personnel_role.xml" value="0.22402736212056434" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/personnel_finance_available_deals.xml" value="0.2231722958529286" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/personnel_finance_bank_account.xml" value="0.22402736212056434" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/personnel_finance_current_deals.xml" value="0.22402736212056434" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/personnel_finance_deal_preview.xml" value="0.22402736212056434" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/personnel_finance_financial_deals.xml" value="0.22402736212056434" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/personnel_finance_other_income_sources.xml" value="0.22" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/personnel_finance_sign_personnel.xml" value="0.22402736212056434" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/personnel_finance_view_personnel.xml" value="0.22402736212056434" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/personnel_preview.xml" value="0.22" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/player_display.xml" value="0.22" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting.xml" value="0.14151346729371525" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting_player_display.xml" value="0.2" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting_send_scout.xml" value="0.14151346729371525" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting_send_scout_games.xml" value="0.14151346729371525" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/squadlist.xml" value="0.22402736212056434" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/title_bar.xml" value="0.22402736212056434" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/mipmap-anydpi-v26/contacts.xml" value="0.1365" />
