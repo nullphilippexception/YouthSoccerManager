@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/match_preview_upper_team"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:text="UpperTeamName" />
+                    <TextView
+                        android:id="@+id/match_preview_lower_team"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:text="LowerTeamName"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/template_btn_name_rename_match_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:textSize="20dp"
+                    android:text="..."
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent">
+
+            </TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/black"
+                android:text=" "/>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/title_bar_scouting_schedule_event"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"></LinearLayout>
+
+
+        <!-- Actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- choose different picture here! -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/scouting_event_public_tryout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#a4a6ab"
+                android:text="Public Tryout"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:icon="@mipmap/calendar"
+                app:iconSize="60dp"
+                app:iconTint="@null" />
+
+            <!-- choose different picture here! -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/scouting_event_training_camp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#a4a6ab"
+                android:text="Training Camp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:icon="@mipmap/calendar"
+                app:iconSize="60dp"
+                app:iconTint="@null" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/scouting_event_special_talent_group"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#a4a6ab"
+                android:text="Special Talent Group"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:icon="@mipmap/calendar"
+                app:iconSize="60dp"
+                app:iconTint="@null" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/scouting_event_special_club_festivity"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#a4a6ab"
+                android:text="Club festivity"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:icon="@mipmap/calendar"
+                app:iconSize="60dp"
+                app:iconTint="@null" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
