@@ -35,13 +35,23 @@
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/player_preview.xml" value="0.14151346729371525" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting.xml" value="0.14151346729371525" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting_player_display.xml" value="0.2" />
-        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting_schedule_event.xml" value="0.41375" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting_schedule_event.xml" value="0.2" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting_schedule_event_club_festivity.xml" value="0.22402736212056434" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting_schedule_event_public_tryout.xml" value="0.21034630183839248" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting_schedule_event_sdg.xml" value="0.21120136810602821" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting_schedule_event_sdg_view.xml" value="0.21120136810602821" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting_schedule_event_training_camp.xml" value="0.21120136810602821" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting_send_scout.xml" value="0.14151346729371525" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting_send_scout_games.xml" value="0.14151346729371525" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting_send_scout_games_assign.xml" value="0.17" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/scouting_send_scout_games_league.xml" value="0.14151346729371525" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/settings_tutorial.xml" value="0.22402736212056434" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/squadlist.xml" value="0.22402736212056434" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/stats.xml" value="0.22402736212056434" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/stats_competition_selection.xml" value="0.22402736212056434" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/stats_cup.xml" value="0.22402736212056434" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/stats_league.xml" value="0.22402736212056434" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/stats_myteam.xml" value="0.22402736212056434" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/title_bar.xml" value="0.22402736212056434" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/mipmap-anydpi-v26/contacts.xml" value="0.1365" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/mipmap-hdpi/write_mail_offer_job.xml" value="0.1365" />

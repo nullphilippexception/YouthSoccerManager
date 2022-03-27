@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/title_bar_stats_league"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"></LinearLayout>
+
+
+        <!-- Actions -->
+        <TableLayout
+            android:id="@+id/stats_league_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="#"
+                    android:textStyle="bold"
+                    android:layout_weight="0.1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="Team"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_weight="0.5"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="GP"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_weight="0.1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="GS:GA"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_weight="0.2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="Points"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_weight="0.1"/>
+            </TableRow>
+
+            <!-- add teams here dynamically -->
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
+

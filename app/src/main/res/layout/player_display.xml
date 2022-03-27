@@ -481,13 +481,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
             <Button
                 android:layout_width="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_height="100dp"
-                android:textSize="25dp"
+                android:layout_height="80dp"
+                android:textSize="20dp"
                 android:text="Contract"
                 android:backgroundTint="#a4a6ab"
                 android:textColor="@color/black"/>
@@ -495,8 +497,8 @@
                 android:layout_width="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_height="100dp"
-                android:textSize="25dp"
+                android:layout_height="80dp"
+                android:textSize="20dp"
                 android:text="Move/Fire"
                 android:backgroundTint="#a4a6ab"
                 android:textColor="@color/black"/>
@@ -504,8 +506,8 @@
                 android:layout_width="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_height="100dp"
-                android:textSize="25dp"
+                android:layout_height="80dp"
+                android:textSize="20dp"
                 android:text="Playing Time"
                 android:backgroundTint="#a4a6ab"
                 android:textColor="@color/black"/>
@@ -513,9 +515,19 @@
                 android:layout_width="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_height="100dp"
-                android:textSize="25dp"
+                android:layout_height="80dp"
+                android:textSize="20dp"
                 android:text="Assign position"
+                android:backgroundTint="#a4a6ab"
+                android:textColor="@color/black"/>
+            <!-- add pop up for skills to be trained here -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="80dp"
+                android:textSize="20dp"
+                android:text="Add to Spec. Dev. Group"
                 android:backgroundTint="#a4a6ab"
                 android:textColor="@color/black"/>
         </LinearLayout>

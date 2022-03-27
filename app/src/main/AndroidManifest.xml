@@ -31,6 +31,10 @@
         <activity android:name=".mails.answers.MailAnswerAvailablePlayers" android:parentActivityName=".mails.WriteMail"></activity>
         <activity android:name=".mails.answers.MailAnswerInterestInFriendly" android:parentActivityName=".mails.WriteMail"></activity>
         <activity android:name=".mails.answers.MailAnswerJobOffer" android:parentActivityName=".mails.WriteMail"></activity>
+        <activity android:name=".personnelandfinance.personnel.ViewPersonnel" android:parentActivityName=".personnelandfinance.PersonnelAndFinance"></activity>
+        <activity android:name=".personnelandfinance.personnel.SignAvailablePersonnel" android:parentActivityName=".personnelandfinance.PersonnelAndFinance"></activity>
+        <activity android:name=".personnelandfinance.finance.BankAccount" android:parentActivityName=".personnelandfinance.PersonnelAndFinance"></activity>
+        <activity android:name=".personnelandfinance.finance.FinancialDeals" android:parentActivityName=".personnelandfinance.PersonnelAndFinance"></activity>
 
 
     </application>

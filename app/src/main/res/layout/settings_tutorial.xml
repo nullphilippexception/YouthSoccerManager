@@ -9,54 +9,53 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="visible">
 
         <LinearLayout
-            android:id="@+id/title_bar_personnel_finance_financial_deals"
+            android:id="@+id/title_bar_settings_tutorial"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical"></LinearLayout>
 
+
         <!-- Actions -->
         <LinearLayout
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
 
             <Button
+                android:id="@+id/settings"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="Settings"
+                android:backgroundTint="#a4a6ab"
+                android:textColor="@color/black"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:backgroundTint="#a4a6ab"
-                android:text="Current Deals"
-                android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:layout_marginTop="10dp" />
 
             <Button
+                android:id="@+id/tutorial"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="Tutorial"
+                android:backgroundTint="#a4a6ab"
+                android:textColor="@color/black"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:backgroundTint="#a4a6ab"
-                android:text="Available Deals"
-                android:textColor="@color/black"
-                android:textSize="25dp" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:backgroundTint="#a4a6ab"
-                android:text="Other Income Sources"
-                android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:layout_marginTop="10dp" />
 
         </LinearLayout>
 
     </LinearLayout>
 </ScrollView>
+

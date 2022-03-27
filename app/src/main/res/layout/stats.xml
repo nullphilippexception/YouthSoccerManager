@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/title_bar_stats"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"></LinearLayout>
+
+
+        <!-- Actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/stats_u19"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="U19 Stats"
+                android:backgroundTint="#a4a6ab"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/stats_u17"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="U17 Stats"
+                android:backgroundTint="#a4a6ab"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/stats_u15"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="U15 Stats"
+                android:backgroundTint="#a4a6ab"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/stats_u13"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="U13 Stats"
+                android:backgroundTint="#a4a6ab"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

@@ -36,6 +36,10 @@ public class MailAnswerInterestInFriendly extends AppCompatActivity implements I
         computeInterest();
     }
 
+    /**
+     * Posts Dialogue that provides help on current screen to user
+     * @param view
+     */
     public void help(View view) {
 
     }

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/title_bar_stats_cup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"></LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="<NameOfRound>"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:text=" "/>
+
+
+        <!-- Actions -->
+        <LinearLayout
+            android:id="@+id/stats_cup_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <!-- add teams here dynamically -->
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:text=" "/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TableRow>
+                <Button
+                    android:id="@+id/stat_cup_previous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:textSize="25dp"
+                    android:text="Prev."
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"/>
+                <Button
+                    android:id="@+id/stats_cup_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:textSize="25dp"
+                    android:text="Next"
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
+
