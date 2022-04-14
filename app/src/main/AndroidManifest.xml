@@ -35,7 +35,11 @@
         <activity android:name=".personnelandfinance.personnel.SignAvailablePersonnel" android:parentActivityName=".personnelandfinance.PersonnelAndFinance"></activity>
         <activity android:name=".personnelandfinance.finance.BankAccount" android:parentActivityName=".personnelandfinance.PersonnelAndFinance"></activity>
         <activity android:name=".personnelandfinance.finance.FinancialDeals" android:parentActivityName=".personnelandfinance.PersonnelAndFinance"></activity>
-
+        <activity android:name=".scoutingandtalentdevelopment.scouting.ScheduleEvent" android:parentActivityName=".scoutingandtalentdevelopment.ScoutingAndTalentDevelopment"></activity>
+        <activity android:name=".scoutingandtalentdevelopment.scouting.SelectionData" android:parentActivityName=".scoutingandtalentdevelopment.ScoutingAndTalentDevelopment"></activity>
+        <activity android:name=".scoutingandtalentdevelopment.scouting.SendScout" android:parentActivityName=".scoutingandtalentdevelopment.ScoutingAndTalentDevelopment"></activity>
+        <activity android:name=".scoutingandtalentdevelopment.scouting.Watchlist" android:parentActivityName=".scoutingandtalentdevelopment.ScoutingAndTalentDevelopment"></activity>
+        <activity android:name=".scoutingandtalentdevelopment.scouting.ScoutableLeagues" android:parentActivityName=".scoutingandtalentdevelopment.scouting.SendScout"></activity>
 
     </application>
 

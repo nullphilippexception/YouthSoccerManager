@@ -34,6 +34,8 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/scouting_send_scout_u19"
+                android:onClick="showGames"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginLeft="20dp"
@@ -44,6 +46,8 @@
                 android:textSize="25dp" />
 
             <Button
+                android:id="@+id/scouting_send_scout_u17"
+                android:onClick="showGames"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginLeft="20dp"
@@ -54,6 +58,8 @@
                 android:textSize="25dp" />
 
             <Button
+                android:id="@+id/scouting_send_scout_u15"
+                android:onClick="showGames"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginLeft="20dp"
@@ -64,6 +70,8 @@
                 android:textSize="25dp" />
 
             <Button
+                android:id="@+id/scouting_send_scout_u13"
+                android:onClick="showGames"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginLeft="20dp"
@@ -74,6 +82,8 @@
                 android:textSize="25dp" />
 
             <Button
+                android:id="@+id/scouting_send_scout_u11"
+                android:onClick="showGames"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginLeft="20dp"

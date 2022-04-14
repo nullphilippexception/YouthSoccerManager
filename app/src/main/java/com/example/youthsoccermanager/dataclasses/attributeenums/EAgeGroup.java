@@ -8,5 +8,6 @@ public enum EAgeGroup {
     U13,
     U15,
     U17,
-    U19
+    U19,
+    U11; // not used in actual games, only used for player scouting
 }

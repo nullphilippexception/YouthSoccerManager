@@ -30,6 +30,7 @@
 
             <Button
                 android:id="@+id/settings"
+                android:onClick="openSettings"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:textStyle="bold"
@@ -43,6 +44,7 @@
 
             <Button
                 android:id="@+id/tutorial"
+                android:onClick="openTutorial"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:textStyle="bold"
