@@ -30,6 +30,7 @@
             <!-- choose different picture here! -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/stats_comp_selection_league"
+                android:onClick="goToSpecifiedStats"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginLeft="10dp"
@@ -46,6 +47,7 @@
             <!-- choose different picture here! -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/stats_comp_selection_cup"
+                android:onClick="goToSpecifiedStats"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginLeft="10dp"
@@ -61,6 +63,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/stats_comp_selection_europe_cup"
+                android:onClick="goToSpecifiedStats"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginLeft="10dp"
@@ -76,6 +79,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/stats_comp_selection_myteam"
+                android:onClick="goToSpecifiedStats"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginLeft="10dp"

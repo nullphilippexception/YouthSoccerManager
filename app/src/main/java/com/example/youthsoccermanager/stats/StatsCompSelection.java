@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,10 +16,10 @@ import com.example.youthsoccermanager.userhelplibrary.IHelpProvider;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Stats extends AppCompatActivity implements IHelpProvider {
-    private final int LL_TITLE_BAR = R.id.title_bar_stats;
-    private final int MAIN_VIEW_BODY = R.layout.stats;
-    private final String PAGE_TITLE = "Stats";
+public class StatsCompSelection extends AppCompatActivity implements IHelpProvider {
+    private final int LL_TITLE_BAR = R.id.title_bar_stats_competition_selection;
+    private final int MAIN_VIEW_BODY = R.layout.stats_competition_selection;
+    private final String PAGE_TITLE = "Competitions";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,26 +34,29 @@ public class Stats extends AppCompatActivity implements IHelpProvider {
         // call help menu entry here
     }
 
-    public void goToCompSelection(View view) {
+    public void goToSpecifiedStats(View view) {
         int buttonId = view.getId();
-        EAgeGroup ageGroup = EAgeGroup.U19; //default
-        Intent intent = new Intent(this, StatsCompSelection.class);
+        EAgeGroup ageGroup = getIntent().getParcelableExtra("AGE_GROUP"); // CHECK IF CORRECT! -> maybe put this in ctor for title use
+        Intent intent = getIntent();
+        intent.putExtra("AGE_GROUP", ageGroup); // easier design?
         switch(buttonId) {
-            case R.id.stats_u19:
-                break; // u19 is default already
-            case R.id.stats_u17:
-                ageGroup = EAgeGroup.U17;
+            case R.id.stats_comp_selection_league:
+                intent.setClass(this, StatsLeague.class);
                 break;
-            case R.id.stats_u15:
-                ageGroup = EAgeGroup.U15;
+            case R.id.stats_comp_selection_cup:
+                intent.setClass(this, StatsCup.class);
                 break;
-            case R.id.stats_u13:
-                ageGroup = EAgeGroup.U13;
+            case R.id.stats_comp_selection_europe_cup:
+                Toast.makeText(this, "You have to unlock international competitions first!", Toast.LENGTH_LONG);
+                intent.setClass(this, StatsCompSelection.class); // think about something better for this in terms of protection
+                //intent.setClass(this, StatsIntCup.class); // only if unlocked already -> DO IF HERE
+                break;
+            case R.id.stats_comp_selection_myteam:
+                intent.setClass(this, StatsMyTeam.class);
                 break;
             default:
                 Logger.getAnonymousLogger().log(Level.WARNING, "Unknown age group requested");
         }
-        intent.putExtra("AGE_GROUP", ageGroup);
         startActivity(intent);
     }
 }

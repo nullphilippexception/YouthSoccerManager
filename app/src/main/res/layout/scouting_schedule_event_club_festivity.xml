@@ -13,7 +13,7 @@
         android:visibility="visible">
 
         <LinearLayout
-            android:id="@+id/title_bar_scouting_schedule_event_training_camp"
+            android:id="@+id/title_bar_scouting_schedule_event_club_festivity"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"

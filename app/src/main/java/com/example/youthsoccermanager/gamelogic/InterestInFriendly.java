@@ -9,9 +9,6 @@ import com.example.youthsoccermanager.userhelplibrary.IHelpProvider;
 /*
 * This class computes whether an opposing coach will be interested in a friendly match
 * */
-public class InterestInFriendly extends AppCompatActivity implements IHelpProvider {
+public class InterestInFriendly {
 
-    public void help(View view) {
-
-    }
 }

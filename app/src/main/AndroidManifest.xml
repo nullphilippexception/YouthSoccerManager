@@ -29,7 +29,6 @@
         <activity android:name=".mails.MailContacts" android:parentActivityName=".mails.Mails"></activity>
         <activity android:name=".mails.WriteMail" android:parentActivityName=".mails.MailContacts"></activity>
         <activity android:name=".mails.answers.MailAnswerAvailablePlayers" android:parentActivityName=".mails.WriteMail"></activity>
-        <activity android:name=".mails.answers.MailAnswerInterestInFriendly" android:parentActivityName=".mails.WriteMail"></activity>
         <activity android:name=".mails.answers.MailAnswerJobOffer" android:parentActivityName=".mails.WriteMail"></activity>
         <activity android:name=".personnelandfinance.personnel.ViewPersonnel" android:parentActivityName=".personnelandfinance.PersonnelAndFinance"></activity>
         <activity android:name=".personnelandfinance.personnel.SignAvailablePersonnel" android:parentActivityName=".personnelandfinance.PersonnelAndFinance"></activity>
@@ -40,6 +39,20 @@
         <activity android:name=".scoutingandtalentdevelopment.scouting.SendScout" android:parentActivityName=".scoutingandtalentdevelopment.ScoutingAndTalentDevelopment"></activity>
         <activity android:name=".scoutingandtalentdevelopment.scouting.Watchlist" android:parentActivityName=".scoutingandtalentdevelopment.ScoutingAndTalentDevelopment"></activity>
         <activity android:name=".scoutingandtalentdevelopment.scouting.ScoutableLeagues" android:parentActivityName=".scoutingandtalentdevelopment.scouting.SendScout"></activity>
+        <activity android:name=".stats.StatsCompSelection" android:parentActivityName=".stats.Stats"></activity>
+        <activity android:name=".stats.StatsIntCup" android:parentActivityName=".stats.StatsCompSelection"></activity>
+        <activity android:name=".stats.StatsLeague" android:parentActivityName=".stats.StatsCompSelection"></activity>
+        <activity android:name=".stats.StatsCup" android:parentActivityName=".stats.StatsCompSelection"></activity>
+        <activity android:name=".stats.StatsMyTeam" android:parentActivityName=".stats.StatsCompSelection"></activity>
+        <activity android:name=".personnelandfinance.personnel.PersonnelDisplay" android:parentActivityName=".personnelandfinance.PersonnelAndFinance"></activity>
+        <activity android:name=".personnelandfinance.personnel.AssignNewPersonnelRole" android:parentActivityName=".personnelandfinance.personnel.PersonnelDisplay"></activity>
+        <activity android:name=".personnelandfinance.finance.financialdeals.OtherIncomeSources" android:parentActivityName=".personnelandfinance.finance.FinancialDeals"></activity>
+        <activity android:name=".personnelandfinance.finance.financialdeals.AvailableDeals" android:parentActivityName=".personnelandfinance.finance.FinancialDeals"></activity>
+        <activity android:name=".personnelandfinance.finance.financialdeals.CurrentDeals" android:parentActivityName=".personnelandfinance.finance.FinancialDeals"></activity>
+        <activity android:name=".scoutingandtalentdevelopment.scouting.events.ClubFestivity" android:parentActivityName=".scoutingandtalentdevelopment.scouting.ScheduleEvent"></activity>
+        <activity android:name=".scoutingandtalentdevelopment.scouting.events.PublicTryout" android:parentActivityName=".scoutingandtalentdevelopment.scouting.ScheduleEvent"></activity>
+        <activity android:name=".scoutingandtalentdevelopment.scouting.events.SpecialTalentGroup" android:parentActivityName=".scoutingandtalentdevelopment.scouting.ScheduleEvent"></activity>
+        <activity android:name=".scoutingandtalentdevelopment.scouting.events.TrainingCamp" android:parentActivityName=".scoutingandtalentdevelopment.scouting.ScheduleEvent"></activity>
 
     </application>
 

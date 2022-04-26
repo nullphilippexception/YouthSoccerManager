@@ -9,6 +9,8 @@
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/drawable-v24/write_mail_ask_for_friendly.xml" value="0.2505" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/drawable-v24/write_mail_ask_for_players.xml" value="0.2505" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/drawable-v24/write_mail_offer_job.xml" value="0.2505" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/calendar.xml" value="0.10346301838392476" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/calendar_day.xml" value="0.11329628046173579" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/mail_contacts.xml" value="0.20607097050021378" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/mail_contacts_available_players.xml" value="0.22402736212056434" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/mail_contacts_friendly_interest.xml" value="0.22402736212056434" />
@@ -52,7 +54,9 @@
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/stats_cup.xml" value="0.22402736212056434" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/stats_league.xml" value="0.22402736212056434" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/stats_myteam.xml" value="0.22402736212056434" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/teams.xml" value="0.22402736212056434" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/title_bar.xml" value="0.22402736212056434" />
+        <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/layout/todays_events.xml" value="0.10346301838392476" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/mipmap-anydpi-v26/contacts.xml" value="0.1365" />
         <entry key="..\:/Users/Philipp/AndroidStudioProjects/YouthSoccerManager/app/src/main/res/mipmap-hdpi/write_mail_offer_job.xml" value="0.1365" />
       </map>

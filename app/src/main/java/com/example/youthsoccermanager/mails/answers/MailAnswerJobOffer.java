@@ -1,5 +1,6 @@
 package com.example.youthsoccermanager.mails.answers;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -10,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.youthsoccermanager.R;
 import com.example.youthsoccermanager.layouthelper.TitleBarSetter;
+import com.example.youthsoccermanager.personnelandfinance.personnel.PersonnelDisplay;
 import com.example.youthsoccermanager.userhelplibrary.IHelpProvider;
 
 import java.util.logging.Level;
@@ -25,6 +27,7 @@ public class MailAnswerJobOffer extends AppCompatActivity implements IHelpProvid
     private final int LL_TITLE_BAR = R.id.title_bar_personnel_contract_negotiation;
     private final int MAIN_VIEW_BODY = R.layout.personnel_contract_negotiation;
     private final String PAGE_TITLE = "Chat";
+    int contactedCoachId;
 
     /**
      * onCreate is called when the activity is created
@@ -35,6 +38,7 @@ public class MailAnswerJobOffer extends AppCompatActivity implements IHelpProvid
         setContentView(MAIN_VIEW_BODY);
         TitleBarSetter.postTitleBar(getLayoutInflater().inflate(R.layout.title_bar, null),
                 (LinearLayout)findViewById(LL_TITLE_BAR), PAGE_TITLE);
+        contactedCoachId = Integer.parseInt(getIntent().getStringExtra("PERSONNEL_ID")); // to check with database whether there is job interest
         Logger.getAnonymousLogger().log(Level.INFO, "Basic page loaded");
     }
 
@@ -70,6 +74,16 @@ public class MailAnswerJobOffer extends AppCompatActivity implements IHelpProvid
         }
     }
 
+    /**
+     * This method opens the PersonnelDisplay screen, which offers more details on the selected personnel
+     * @param view skill details button
+     */
+    public void getInfoOnPersonnel(View view)
+    {
+        Intent intent = new Intent(this, PersonnelDisplay.class);
+        intent.putExtra("PERSONNEL_ID", contactedCoachId);
+        startActivity(intent);
+    }
     /**
      * This method computes whether the job offer made by the user will be accepted. To do so, the offer parameters get passed
      * to the method and the personnel data is fetched from the database.

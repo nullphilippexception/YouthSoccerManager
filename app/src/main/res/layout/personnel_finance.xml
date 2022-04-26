@@ -49,7 +49,7 @@
                     android:text="Salary: $XX,XXX"
                     android:textColor="@color/black"
                     android:textSize="20dp"
-                    android:layout_marginleft="15dp"
+                    android:layout_marginLeft="15dp"
                     android:textStyle="bold"/>
             </TableRow>
         </TableLayout>

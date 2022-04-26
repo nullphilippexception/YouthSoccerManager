@@ -27,6 +27,8 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/financial_deals_current_deals"
+                android:onClick="goToFinancialDealSubMenu"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginLeft="20dp"
@@ -37,6 +39,8 @@
                 android:textSize="25dp" />
 
             <Button
+                android:id="@+id/financial_deals_available_deals"
+                android:onClick="goToFinancialDealSubMenu"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginLeft="20dp"
@@ -47,6 +51,8 @@
                 android:textSize="25dp" />
 
             <Button
+                android:id="@+id/financial_deals_other_income_sources"
+                android:onClick="goToFinancialDealSubMenu"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginLeft="20dp"

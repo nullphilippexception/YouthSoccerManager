@@ -148,6 +148,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -208,6 +210,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -268,6 +272,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -328,6 +334,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -388,6 +396,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -448,6 +458,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -508,6 +520,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -568,6 +582,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -628,6 +644,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -688,6 +706,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -748,6 +768,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -808,6 +830,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -868,6 +892,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -928,6 +954,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -988,6 +1016,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -1048,6 +1078,8 @@
                     android:textStyle="bold"
                     android:layout_weight="0.2"/>
                 <Button
+                    android:backgroundTint="#a4a6ab"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"

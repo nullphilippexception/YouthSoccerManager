@@ -25,6 +25,7 @@ public class MailAnswerInterestInFriendly extends AppCompatActivity implements I
     private final int LL_TITLE_BAR = R.id.title_bar_mail_contacts_friendly_interest;
     private final int MAIN_VIEW_BODY = R.layout.mail_contacts_friendly_interest;
     private final String PAGE_TITLE = "Chat";
+    int contactedCoachId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class MailAnswerInterestInFriendly extends AppCompatActivity implements I
         setContentView(MAIN_VIEW_BODY);
         TitleBarSetter.postTitleBar(getLayoutInflater().inflate(R.layout.title_bar, null),
                 (LinearLayout)findViewById(LL_TITLE_BAR), PAGE_TITLE);
+        contactedCoachId = Integer.parseInt(getIntent().getStringExtra("PERSONNEL_ID")); // to check with database whether there is interest
         Logger.getAnonymousLogger().log(Level.INFO, "Basic page loaded");
         computeInterest();
     }

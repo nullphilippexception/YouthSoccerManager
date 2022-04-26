@@ -30,6 +30,7 @@
 
             <Button
                 android:id="@+id/stats_u19"
+                android:onClick="goToCompSelection"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:textStyle="bold"
@@ -43,6 +44,7 @@
 
             <Button
                 android:id="@+id/stats_u17"
+                android:onClick="goToCompSelection"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:textStyle="bold"
@@ -56,6 +58,7 @@
 
             <Button
                 android:id="@+id/stats_u15"
+                android:onClick="goToCompSelection"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:textStyle="bold"
@@ -69,6 +72,7 @@
 
             <Button
                 android:id="@+id/stats_u13"
+                android:onClick="goToCompSelection"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:textStyle="bold"

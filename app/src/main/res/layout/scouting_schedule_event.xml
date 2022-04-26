@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
@@ -30,6 +31,7 @@
             <!-- choose different picture here! -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/scouting_event_public_tryout"
+                android:onClick="goToEvent"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginLeft="10dp"
@@ -46,6 +48,7 @@
             <!-- choose different picture here! -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/scouting_event_training_camp"
+                android:onClick="goToEvent"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginLeft="10dp"
@@ -61,6 +64,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/scouting_event_special_talent_group"
+                android:onClick="goToEvent"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginLeft="10dp"
@@ -76,6 +80,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/scouting_event_special_club_festivity"
+                android:onClick="goToEvent"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginLeft="10dp"
