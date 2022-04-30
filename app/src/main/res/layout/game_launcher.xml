@@ -26,20 +26,27 @@
             android:orientation="vertical"
             android:gravity="center">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
+            <Button
+                android:textSize="30dp"
+                android:textStyle="bold"
                 android:layout_height="100dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
                 android:backgroundTint="#a4a6ab"
                 android:textColor="@color/black"
-                android:text="Contacts"
-                android:textSize="25dp"
-                app:icon="@mipmap/contacts"
-                app:iconSize="80dp"
-                app:iconTint="@null"
-                android:onClick="goToContacts"/>
+                android:text="Create Game"
+                android:onClick="createGame"/>
+
+            <Button
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:backgroundTint="#a4a6ab"
+                android:textColor="@color/black"
+                android:text="Load Game"
+                android:onClick="loadGame"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -52,11 +59,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/mails_inbox_list"
                 android:orientation="vertical"
                 android:gravity="center">
 
-
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff0000"
+                    android:textAlignment="center"
+                    android:text="Mails: not created"
+                    android:id="@+id/launch_mails"
+                    android:visibility="invisible"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

@@ -9,15 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.YouthSoccerManager">
-        <activity android:name=".MainMenu">
+        <activity android:name=".GameLauncher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainMenu" android:parentActivityName=".GameLauncher"></activity>
         <activity android:name=".todaysevents.TodaysEvents" android:parentActivityName=".MainMenu"></activity>
         <activity android:name=".calendar.Calendar" android:parentActivityName=".MainMenu"></activity>
         <activity android:name=".mails.Mails" android:parentActivityName=".MainMenu"></activity>
+        <activity android:name=".mails.MailDisplay" android:parentActivityName=".mails.Mails"></activity>
         <activity android:name=".teams.Teams" android:parentActivityName=".MainMenu"></activity>
         <activity android:name=".personnelandfinance.PersonnelAndFinance" android:parentActivityName=".MainMenu"></activity>
         <activity android:name=".scoutingandtalentdevelopment.ScoutingAndTalentDevelopment" android:parentActivityName=".MainMenu"></activity>

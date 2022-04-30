@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/title_bar_mail_display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mail_contacts_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+        <TextView
+            android:id="@+id/mail_display_sender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="25dp"
+            android:text="Sender"/>
+
+            <TextView
+                android:id="@+id/mail_display_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="25dp"
+                android:text="Date"/>
+
+            <TextView
+                android:id="@+id/mail_display_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="Title"/>
+
+            <TextView
+                android:id="@+id/mail_display_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="25dp"
+                android:text="Text Text Text"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textSize="25dp"
+                android:backgroundTint="#a4a6ab"
+                android:textColor="@color/black"
+                android:layout_margin="30dp"
+                android:text="Delete"
+                android:onClick="deleteThisMail"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
