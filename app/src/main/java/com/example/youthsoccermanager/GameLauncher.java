@@ -6,6 +6,8 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,7 +17,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
 import com.example.youthsoccermanager.dataclasses.admin.GlobalGameVar;
+import com.example.youthsoccermanager.dataclasses.admin.Team;
 import com.example.youthsoccermanager.gamecreation.CreatorMailDB;
+import com.example.youthsoccermanager.gamecreation.CreatorTeamDB;
 import com.example.youthsoccermanager.gamecreation.database.GameDatabase;
 import com.example.youthsoccermanager.gamecreation.database.GlobalGameVarDAO;
 import com.example.youthsoccermanager.layouthelper.TitleBarSetter;
@@ -43,9 +47,6 @@ public class GameLauncher extends AppCompatActivity {
             Toast.makeText(this, "Ooops! Sorry, something went wrong. Please try again.", Toast.LENGTH_LONG);
             Logger.getAnonymousLogger().log(Level.SEVERE, "Error in game creation, message: " + e.getMessage());
         }
-
-        Intent intent = new Intent(this, MainMenu.class);
-        startActivity(intent);
     }
 
     public void loadGame(View view) {
@@ -71,10 +72,41 @@ public class GameLauncher extends AppCompatActivity {
         CreatorMailDB.createInitialMails();
         ((TextView)findViewById(R.id.launch_mails)).setTextColor(Color.rgb(0,100,0));
         ((TextView)findViewById(R.id.launch_mails)).setText("Mails created");
+
+        // TEAMS
+        CreatorTeamDB.createTeams();
+        ((TextView)findViewById(R.id.launch_teams)).setTextColor(Color.rgb(0,100,0));
+        ((TextView)findViewById(R.id.launch_teams)).setText("Teams created");
+
+        // ...
+
+        // FINAL STEP
+        askForUserTeamName();
     }
 
     private void showSteps() {
         ((TextView)findViewById(R.id.launch_mails)).setVisibility(View.VISIBLE);
+        ((TextView)findViewById(R.id.launch_teams)).setVisibility(View.VISIBLE);
     }
+
+    private void askForUserTeamName() {
+        ((TextView)findViewById(R.id.hint_user_teamname)).setVisibility(View.VISIBLE);
+        ((EditText)findViewById(R.id.edittext_user_teamname)).setVisibility(View.VISIBLE);
+        ((Button)findViewById(R.id.button_user_create)).setVisibility(View.VISIBLE);
+    }
+
+    public void startCreatedGame(View view) {
+        // PROTECT AGAINST SQL INJECTION HERE!
+        String userTeamName = ((EditText)findViewById(R.id.edittext_user_teamname)).getText().toString();
+        // MAYBE CREATE ID IN TEAM - OR CHECK FOR DUPLICATES HERE!
+        Team userTeam = new Team(userTeamName,"City League III", 0,0,
+                0,0);
+        GameDatabase.getDB().teamDAO().insertTeam(userTeam);
+        Logger.getAnonymousLogger().log(Level.INFO, "User team created, name: " + userTeamName);
+        Intent intent = new Intent(this, MainMenu.class);
+        startActivity(intent);
+    }
+
+
 
 }
