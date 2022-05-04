@@ -54,7 +54,7 @@ public class Stats extends AppCompatActivity implements IHelpProvider {
             default:
                 Logger.getAnonymousLogger().log(Level.WARNING, "Unknown age group requested");
         }
-        intent.putExtra("AGE_GROUP", ageGroup);
+        intent.putExtra("AGE_GROUP", ageGroup.toString());
         startActivity(intent);
     }
 }

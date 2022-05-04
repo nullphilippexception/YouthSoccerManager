@@ -13,7 +13,10 @@ import java.util.List;
 public interface TeamDAO {
 
     @Query("SELECT * FROM team WHERE league LIKE :league")
-    List<Team> getAllInLeague(String league);
+    List<Team> getAllInLeague(String league); // dont use with raw string but with <ELeague>.toString();
+
+    @Query("SELECT * FROM team WHERE league LIKE :league AND ageGroup LIKE :ageGroup")
+    List<Team> getAllInLeagueForAgeGroup(String league, String ageGroup); // dont use with raw string but with <ELeague>.toString();
 
     @Insert
     void insertTeam(Team team);

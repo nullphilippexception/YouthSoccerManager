@@ -22,6 +22,18 @@ public interface GlobalGameVarDAO {
     @Query("SELECT * FROM globalgamevar WHERE category LIKE 'money'")
     GlobalGameVar getMoney();
 
+    @Query("SELECT * FROM globalgamevar WHERE category LIKE 'u19league'")
+    GlobalGameVar getU19League();
+
+    @Query("SELECT * FROM globalgamevar WHERE category LIKE 'u17league'")
+    GlobalGameVar getU17League();
+
+    @Query("SELECT * FROM globalgamevar WHERE category LIKE 'u15league'")
+    GlobalGameVar getU15League();
+
+    @Query("SELECT * FROM globalgamevar WHERE category LIKE 'u13league'")
+    GlobalGameVar getU13League();
+
     @Insert
     void setGlobalGameVar(GlobalGameVar ggv);
 

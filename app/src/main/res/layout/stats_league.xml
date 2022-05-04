@@ -32,50 +32,85 @@
             android:layout_marginRight="10dp">
 
             <TableRow>
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:id="@+id/ll_stats_league_nr"
                     android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:textColor="@color/black"
-                    android:text="#"
-                    android:textStyle="bold"
-                    android:layout_weight="0.1"/>
-                <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:text="#"
+                        android:textStyle="bold"
+                        android:layout_weight="0.1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_stats_league_team"
                     android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:textColor="@color/black"
-                    android:text="Team"
-                    android:layout_marginLeft="10dp"
-                    android:textStyle="bold"
-                    android:layout_weight="0.5"/>
-                <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:text="Team"
+                        android:textStyle="bold"
+                        android:layout_weight="0.5"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_stats_league_gp"
                     android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:textColor="@color/black"
-                    android:text="GP"
-                    android:layout_marginLeft="10dp"
-                    android:textStyle="bold"
-                    android:layout_weight="0.1"/>
-                <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:text="GP"
+                        android:textStyle="bold"
+                        android:layout_weight="0.1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_stats_league_gsga"
                     android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:textColor="@color/black"
-                    android:text="GS:GA"
-                    android:layout_marginLeft="10dp"
-                    android:textStyle="bold"
-                    android:layout_weight="0.2"/>
-                <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:text="GS:GA"
+                        android:textStyle="bold"
+                        android:layout_weight="0.2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_stats_league_points"
                     android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:textColor="@color/black"
-                    android:text="Points"
-                    android:layout_marginLeft="10dp"
-                    android:textStyle="bold"
-                    android:layout_weight="0.1"/>
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:text="Pts"
+                        android:textStyle="bold"
+                        android:layout_weight="0.1"/>
+                </LinearLayout>
             </TableRow>
 
             <!-- add teams here dynamically -->

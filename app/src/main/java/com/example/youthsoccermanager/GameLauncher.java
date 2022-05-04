@@ -18,12 +18,16 @@ import androidx.room.Room;
 
 import com.example.youthsoccermanager.dataclasses.admin.GlobalGameVar;
 import com.example.youthsoccermanager.dataclasses.admin.Team;
+import com.example.youthsoccermanager.dataclasses.attributeenums.EAgeGroup;
+import com.example.youthsoccermanager.dataclasses.attributeenums.ELeague;
 import com.example.youthsoccermanager.gamecreation.CreatorMailDB;
 import com.example.youthsoccermanager.gamecreation.CreatorTeamDB;
 import com.example.youthsoccermanager.gamecreation.database.GameDatabase;
 import com.example.youthsoccermanager.gamecreation.database.GlobalGameVarDAO;
 import com.example.youthsoccermanager.layouthelper.TitleBarSetter;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -61,8 +65,13 @@ public class GameLauncher extends AppCompatActivity {
         GameDatabase.init(getApplicationContext());
         GlobalGameVarDAO gameVarDAO = GameDatabase.getDB().gameVarDAO();
         try {
+            // CREATE enum for gamevar names?
             gameVarDAO.setGlobalGameVar(new GlobalGameVar("date", "01-July"));
             gameVarDAO.setGlobalGameVar(new GlobalGameVar("money", "2000"));
+            gameVarDAO.setGlobalGameVar(new GlobalGameVar("u19league", ELeague.CityLeagueIII.toString()));
+            gameVarDAO.setGlobalGameVar(new GlobalGameVar("u17league", ELeague.CityLeagueIII.toString()));
+            gameVarDAO.setGlobalGameVar(new GlobalGameVar("u15league", ELeague.CityLeagueIII.toString()));
+            gameVarDAO.setGlobalGameVar(new GlobalGameVar("u13league", ELeague.CityLeagueIII.toString()));
         }
         catch(Exception e) {
             Logger.getAnonymousLogger().log(Level.SEVERE, e.getMessage());
@@ -98,10 +107,15 @@ public class GameLauncher extends AppCompatActivity {
     public void startCreatedGame(View view) {
         // PROTECT AGAINST SQL INJECTION HERE!
         String userTeamName = ((EditText)findViewById(R.id.edittext_user_teamname)).getText().toString();
-        // MAYBE CREATE ID IN TEAM - OR CHECK FOR DUPLICATES HERE!
-        Team userTeam = new Team(userTeamName,"City League III", 0,0,
-                0,0);
-        GameDatabase.getDB().teamDAO().insertTeam(userTeam);
+        // MAYBE CREATE ID IN TEAM - OR CHECK FOR DUPLICATES HERE! - jsut rename computer team that has this name?
+        // MAYBE ADD UXX TO TEAM NAME?
+        List<String> ageGroups = Arrays.asList(EAgeGroup.U19.toString(), EAgeGroup.U17.toString(), EAgeGroup.U15.toString(),
+                EAgeGroup.U13.toString());
+        for(String ageGroup : ageGroups) {
+            Team userTeam = new Team(userTeamName + " " + ageGroup, ELeague.CityLeagueIII.toString(), ageGroup, 0,0,
+                    0,0);
+            GameDatabase.getDB().teamDAO().insertTeam(userTeam);
+        }
         Logger.getAnonymousLogger().log(Level.INFO, "User team created, name: " + userTeamName);
         Intent intent = new Intent(this, MainMenu.class);
         startActivity(intent);

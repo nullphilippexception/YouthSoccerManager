@@ -36,7 +36,7 @@ public class StatsCompSelection extends AppCompatActivity implements IHelpProvid
 
     public void goToSpecifiedStats(View view) {
         int buttonId = view.getId();
-        EAgeGroup ageGroup = getIntent().getParcelableExtra("AGE_GROUP"); // CHECK IF CORRECT! -> maybe put this in ctor for title use
+        String ageGroup = getIntent().getStringExtra("AGE_GROUP"); // CHECK IF CORRECT! -> maybe put this in ctor for title use
         Intent intent = getIntent();
         intent.putExtra("AGE_GROUP", ageGroup); // easier design?
         switch(buttonId) {
